@@ -262,10 +262,10 @@ SELECT toFixedString('foo\0bar', 8) AS s, toStringCutToZero(s) AS s_cut
 └────────────┴───────┘
 ```
 
-## parseDateTimeBestEffort()
-git checkout remotes/godfreyd/en-docs/CLICKHOUSEDOCS-19-parsedatetimebesteffort
+## parseDateTimeBestEffort
+
 Преобразует строковое представление даты и времени в его эквивалент DateTime, используя сведения о форматировании, связанные с языком и региональными параметрами, а также стиль форматирования. Не дает гарантии качества: возможны отбрасывания, разупорядочивание, непредсказуемые задержки.
-Geibcnbryandex)(*
+
 Поддерживаются следующие форматы:
 
 * Дата — `DD.MM.YYYY`, `DD.MM.YY`, `DD-MM-YYYY`, `DD-Mon-YYYY`, `DD/Month/YYYY` и аналогичные им.
