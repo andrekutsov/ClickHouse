@@ -271,7 +271,7 @@ SELECT toFixedString('foo\0bar', 8) AS s, toStringCutToZero(s) AS s_cut
 * Дата — `DD.MM.YYYY`, `DD.MM.YY`, `DD-MM-YYYY`, `DD-Mon-YYYY`, `DD/Month/YYYY` и аналогичные им.
 * Время — `hh:mm:ss`, `hhmmss`, `hh:mm`.
 
-Значения даты и времени могу отделяться пробелом или буквой `T`
+Значения даты и времени могу отделяться пробелом или буквой `T`.
 
 ## reinterpretAsUInt(8|16|32|64)
 
