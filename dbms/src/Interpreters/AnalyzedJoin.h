@@ -2,7 +2,6 @@
 
 #include <Core/Names.h>
 #include <Core/NamesAndTypes.h>
-#include <Core/SettingsCommon.h>
 #include <Parsers/ASTTablesInSelectQuery.h>
 #include <Interpreters/IJoin.h>
 #include <Interpreters/asof.h>
@@ -94,7 +93,7 @@ public:
     void addOnKeys(ASTPtr & left_table_ast, ASTPtr & right_table_ast);
 
     bool hasUsing() const { return table_join.using_expression_list != nullptr; }
-    bool hasOn() const { return !hasUsing(); }
+    bool hasOn() const { return table_join.on_expression != nullptr; }
 
     NameSet getQualifiedColumnsSet() const;
     NameSet getOriginalColumnsSet() const;
